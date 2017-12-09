@@ -1,0 +1,28 @@
+<DOCTYPE html>
+<html lang='pt-BR'>
+  <head>
+    <title>Schema Validator</title>
+    <meta charset='UTF-8'>
+  </head>
+  <body>
+    <script>
+    
+      // Testando
+
+      var test = Schema({
+         'nome': 'string',
+         'idade': 'int',
+         'email': 'mail'
+      });
+
+      let validate = test({
+         'nome': 'Paulão',
+         'idade': 16,
+         'email': 'jskhanframework@gmail.com'
+      });
+
+      if(validate) console.log('Passou !!');
+      
+    </script>
+  </body>
+</html>
